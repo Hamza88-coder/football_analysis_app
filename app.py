@@ -142,7 +142,7 @@ def main():
 
         # Save video
         output_file_path = os.path.join("output_videos", 'output_ta9_video_264_h264_h264.mp4')
-        #save_video(output_video_frmaes, output_file_path)
+        save_video(output_video_frmaes, output_file_path)
         
 
         #save video tactic map
