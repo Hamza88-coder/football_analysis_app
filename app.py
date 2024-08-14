@@ -371,13 +371,13 @@ def get_offside(tracks,video_frames):
 
                             
     
-    print("point2 =",point2)
-    print("/n")
-    print("point =",point)
-
-    print("list_offside =",list_frame_offside)
-
-    print("list_coord_off =",list_coord_off)
+    
+    # Writing the output to constants.py
+    with open('constants.py', 'a') as f:
+        f.write(f"point2 = {point2}\n")
+        f.write(f"point = {point}\n")
+        f.write(f"list_offside = {list_frame_offside}\n")
+        f.write(f"list_coord_off = {list_coord_off}\n")
 
     return list_frame_offside,point,list_coord_off
     
